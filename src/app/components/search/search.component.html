@@ -1,0 +1,13 @@
+<div class="row mb-5">
+  <div class="col">
+    <input
+      #term
+      type="text"
+      (keyup)="search(term.value)"
+      class="form-control"
+      placeholder="Search artist"
+    />
+  </div>
+</div>
+
+<app-card [items]="artists"></app-card>
